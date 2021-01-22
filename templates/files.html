@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    {% for dir1 in dirs  %}
+    <div class="container">
+      <p value="{{ dir1 }}">{{ dir1 }}</p>
+      <a href="{{ dir1 }}" download="{{ dir1 }}" >Download</a>
+    </div>
+    {% endfor %}
+
+    <a href="/upload" >Upload</a>
+
+
+  </body>
+</html>
